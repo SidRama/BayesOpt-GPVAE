@@ -7,7 +7,7 @@ Overview
 In this work, we introduce a conditional generative model for efficient high-dimensional Bayesian Optimisation, leveraging a Gaussian Process surrogate model alongside Gaussian Process prior Variational Autoencoders. Our approach integrates observed target values as auxiliary covariates, learning a structured latent space that enhances compatibility with the GP-based BO surrogate model. It effectively handles partially observed auxiliary covariates within a unified probabilistic framework and seamlessly incorporates additional covariates that may arise in real-world applications.
 ![BayesOpt-GPVAE overview.](./images/summary_image.png)
 <br/><br/>
-the firgure considers the example application of discovering novel drug-like molecules. Our method uses a GP prior VAE with an additive kernel over various partially observed auxiliary covariates, such as molecular weight, number of hydrogen bonds, total polar surface area, etc., and the partially observed quantity of interest (represented by $x^{(r)}$ in this image for the $r^\text{th}$ additive kernel) to learn a structured latent space. The black-box function evaluates the quantity of interest for the chosen molecule.
+The figure considers the example application of discovering novel drug-like molecules. Our method uses a GP prior VAE with an additive kernel over various partially observed auxiliary covariates, such as molecular weight, number of hydrogen bonds, total polar surface area, etc., and the partially observed quantity of interest (represented by $x^{(r)}$ in this image for the $r^\text{th}$ additive kernel) to learn a structured latent space. The black-box function evaluates the quantity of interest for the chosen molecule.
 
 Description of files
 ------------------------
